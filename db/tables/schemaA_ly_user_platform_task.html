@@ -14,33 +14,30 @@
 <hr>
 <h1>Table: ly_user_platform_task</h1>
 <div class="paragraph">
-<p>用户普通任务关系表</p>
+<p>每日任务提醒表</p>
 </div>
 <h2>Columns</h2>
 <table class="flat">
-<tr>
+<tr class="altRow">
 <td class="header">PK</td><td class="header">Name</td><td class="header">Data Type</td><td class="header">NULL</td><td class="header">Auto</td><td class="header">Default</td><td class="header">Comment</td><td class="header">FK</td>
 </tr>
 <tr>
 <td class="PkCol">
 <p class="boolImg">
 <img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/schemaA_ly_user_platform_task_id.html">id</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol"><a href="../columns/schemaA_ly_user_platform_task_id.html">id</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">ID（主键）-自增</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/schemaA_ly_user_platform_task_user_code.html">user_code</a></td><td>VarChar(32)</td><td>
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>用户code</td><td> </td>
-</tr>
-<tr>
 <td> </td><td><a href="../columns/schemaA_ly_user_platform_task_task_code.html">task_code</a></td><td>VarChar(32)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>任务编码</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/schemaA_ly_user_platform_task_user_code.html">user_code</a></td><td>VarChar(32)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>用户编码</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/schemaA_ly_user_platform_task_task_status.html">task_status</a></td><td>VarChar(1)</td><td>
@@ -49,18 +46,24 @@
 </td><td> </td><td> </td><td>任务状态（0：未完成，1：已完成）默认为0</td><td> </td>
 </tr>
 <tr>
+<td> </td><td><a href="../columns/schemaA_ly_user_platform_task_train_task_id.html">train_task_id</a></td><td>Integer</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>实训任务ID</td><td> </td>
+</tr>
+<tr class="altRow">
 <td> </td><td><a href="../columns/schemaA_ly_user_platform_task_creator.html">creator</a></td><td>VarChar(24)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>创建者</td><td> </td>
 </tr>
-<tr class="altRow">
+<tr>
 <td> </td><td><a href="../columns/schemaA_ly_user_platform_task_createtime.html">createtime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>创建时间</td><td> </td>
 </tr>
-<tr>
+<tr class="altRow">
 <td> </td><td><a href="../columns/schemaA_ly_user_platform_task_lastedittime.html">lastedittime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
